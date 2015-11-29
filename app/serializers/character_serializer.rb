@@ -1,4 +1,5 @@
 class CharacterSerializer < ActiveModel::Serializer
+  embed :ids, include: true
   attributes :id, :name, :title, :social_class, :actor_id, :family_id
   has_many :quotes
 
