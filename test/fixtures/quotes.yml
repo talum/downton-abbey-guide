@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: quotes
+#
+#  id           :integer          not null, primary key
+#  description  :string
+#  character_id :integer
+#  episode_id   :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  character_id: 1
+  episode_id: 1
+
+two:
+  description: MyString
+  character_id: 1
+  episode_id: 1
