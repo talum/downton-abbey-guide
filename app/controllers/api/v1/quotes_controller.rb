@@ -9,7 +9,7 @@ class Api::V1::QuotesController < ApplicationController
   end
 
   def create
-    @quote = Quote.create(description: quote_params[:description])
+    @quote = Quote.create(quote_params)
     render json: @quote
   end
 
