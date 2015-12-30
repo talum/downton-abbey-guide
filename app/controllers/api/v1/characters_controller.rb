@@ -1,4 +1,5 @@
 class Api::V1::CharactersController < ApplicationController
+
   def index
     render json: Character.all
   end
@@ -13,9 +14,15 @@ class Api::V1::CharactersController < ApplicationController
     render json: @character
   end
 
+  def update
+    @character = Character.find(params[:id])
+    @character.update(character_params)
+    render json: @character
+  end
+
 private
   def character_params
-    params.require(:character).permit(:name, :title)
+    params.require(:character).permit(:name, :title, :social_class)
   end
 
 end
