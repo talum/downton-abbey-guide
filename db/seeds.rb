@@ -53,3 +53,17 @@ Quote.create(description: "I'm not a romantic, but even I concede that the heart
 Quote.create(description: "You've lived your life, and I've lived mine. Now it's time we live them together.", character_id: 13)
 Quote.create(description: "Oh, it is you! I thought it was a man in your clothes.", character_id: 11)
 
+Season.create(summary: "Downton Begins", time_period: "1912")
+Season.create(summary: "WWI", time_period: "1912-1919")
+Season.create(summary: "Post-War", time_period: "1920")
+Season.create(summary: "Coping", time_period: "1921")
+Season.create(summary: "Times are Changing", time_period: "1922-1924")
+Season.create(summary: "The End", time_period: "1925")
+
+Episode.create(name: "One", summary: "the Titanic sinks", season_id: 1)
+Episode.create(name: "Two", summary: "More Stuff", season_id: 1)
+Episode.create(name: "Another episode", summary: "More Stuff", season_id: 2)
+Episode.create(name: "Another episode", summary: "More Stuff", season_id: 3)
+Episode.create(name: "Another episode", summary: "More Stuff", season_id: 4)
+Episode.create(name: "Another episode", summary: "More Stuff", season_id: 5)
+Episode.create(name: "Another episode", summary: "More Stuff", season_id: 6)
