@@ -9,12 +9,13 @@ class Api::V1::QuotesController < ApplicationController
   end
 
   def create
+    binding.pry
     @quote = Quote.create(quote_params)
     render json: @quote
   end
 
 private
   def quote_params
-    params.require(:quote).permit(:description, :character_id)
+    params.require(:quote).permit(:description, :character_id, :episode_id)
   end
 end
