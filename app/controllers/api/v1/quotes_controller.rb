@@ -9,7 +9,6 @@ class Api::V1::QuotesController < ApplicationController
   end
 
   def create
-    binding.pry
     @quote = Quote.create(quote_params)
     render json: @quote
   end

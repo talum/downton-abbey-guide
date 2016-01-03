@@ -4,6 +4,7 @@ class QuoteSerializer < ActiveModel::Serializer
   def attributes
     attributes = super 
     attributes[:character] = object.character.try(:as_json)
+    attributes[:episode] = object.episode.try(:as_json)
     attributes
   end
 end
