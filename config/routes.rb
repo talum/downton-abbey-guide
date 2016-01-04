@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :quotes
       resources :episodes
       resources :seasons
+      resources :actors
     end
   end
 end
