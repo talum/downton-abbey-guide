@@ -10,6 +10,7 @@ class Api::V1::CharactersController < ApplicationController
   end
 
   def create
+    binding.pry
     @character = Character.create(character_params)
     render json: @character
   end
@@ -20,9 +21,15 @@ class Api::V1::CharactersController < ApplicationController
     render json: @character
   end
 
+  def destroy
+    @character = Character.find(params[:id])
+    @character.destroy
+    render json: {message: "done"}
+  end
+
 private
   def character_params
-    params.require(:character).permit(:name, :title, :social_class, :actor_attributes=>[:name])
+    params.require(:character).permit(:name, :title, :social_class, :actor_id)
   end
 
 end
