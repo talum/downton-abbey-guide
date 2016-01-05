@@ -11,7 +11,7 @@ class Api::V1::ActorsController < ApplicationController
 
 private
   def actor_params
-    params.require(:actor).permit(:name)
+    params.require(:actor).permit(:name, :image_url, :imdb_link)
   end
 
 end
