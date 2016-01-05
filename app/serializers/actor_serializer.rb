@@ -1,3 +1,3 @@
 class ActorSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :imdb_link, :image_url
 end
