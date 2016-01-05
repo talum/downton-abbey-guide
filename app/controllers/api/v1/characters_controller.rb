@@ -10,7 +10,6 @@ class Api::V1::CharactersController < ApplicationController
   end
 
   def create
-    binding.pry
     @character = Character.create(character_params)
     render json: @character
   end
