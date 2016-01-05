@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: quotes
+#
+#  id           :integer          not null, primary key
+#  description  :string
+#  character_id :integer
+#  episode_id   :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
 class QuoteSerializer < ActiveModel::Serializer
   attributes :id, :description, :character_id, :episode_id
 

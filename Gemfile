@@ -15,7 +15,13 @@ gem 'active_model_serializers'
 
 gem 'annotate'
 
+gem 'better_errors'
 gem 'pry-byebug'
+gem 'awesome_print'
+
+gem 'pg'
+gem 'httparty'
+gem 'recursive-open-struct'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

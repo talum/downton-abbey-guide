@@ -13,6 +13,7 @@
 #  image_url    :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
+#  bio          :string
 #
 
 class Character < ActiveRecord::Base
