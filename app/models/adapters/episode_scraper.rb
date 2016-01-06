@@ -33,9 +33,10 @@ module Adapters
         results = noko_data(url)
         name = results.css('h1').text
         summary = results.css('p').first.text
+        image_url = results.css('.image').first.attributes.first[1].value
         season_name = results.css('.infobox a').attr('title').value
         season = Season.find_by(name: season_name)
-        Episode.create(name: name, summary: summary, season_id: season.id)
+        Episode.create(name: name, summary: summary, image_url: image_url, season_id: season.id)
       end
     end
 

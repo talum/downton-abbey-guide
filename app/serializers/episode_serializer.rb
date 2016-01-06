@@ -11,7 +11,7 @@
 #
 
 class EpisodeSerializer < ActiveModel::Serializer
-  attributes :id, :name, :summary, :season_id 
+  attributes :id, :name, :summary, :season_id, :image_url 
   has_many :quotes
 
   def attributes
