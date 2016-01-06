@@ -133,6 +133,7 @@ DEPENDENCIES
   awesome_print
   better_errors
   httparty
+  nokogiri
   pg
   pry-byebug
   rack-cors

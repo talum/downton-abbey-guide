@@ -21,6 +21,7 @@ gem 'awesome_print'
 
 gem 'pg'
 gem 'httparty'
+gem 'nokogiri'
 gem 'recursive-open-struct'
 
 # To use ActiveModel has_secure_password

@@ -6,10 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Character.destroy_all
-Actor.destroy_all
-Quote.destroy_all
-Family.destroy_all
-Spouse.destroy_all
-Episode.destroy_all
-Season.destroy_all
+Adapters::SeasonClient.new.create_seasons
+Adapters::EpisodeScraper.new.scrape_episodes
+Adapters::CharacterClient.new.create_characters

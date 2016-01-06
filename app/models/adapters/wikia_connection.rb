@@ -18,11 +18,6 @@ module Adapters
       results = connection.get(url)
     end
 
-    # def query(query = {})
-    #   results = connection.get("http://downtonabbey.wikia.com/api/v1/Navigation/Data")
-    #   binding.pry
-    #   s_results = RecursiveOpenStruct.new(results, :recurse_over_arrays => true)
-    # end
 
   end
 end
