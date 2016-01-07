@@ -11,7 +11,7 @@
 #
 
 class QuoteSerializer < ActiveModel::Serializer
-  attributes :id, :description, :character_id, :episode_id
+  attributes :id, :description, :context, :character_id, :episode_id
 
   def attributes
     attributes = super 
