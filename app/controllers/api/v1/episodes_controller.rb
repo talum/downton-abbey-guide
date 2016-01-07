@@ -3,6 +3,11 @@ class Api::V1::EpisodesController < ApplicationController
     render json: Episode.all
   end
 
+  def show 
+    @episode = Episode.find(params[:id])
+    render json: @episode
+  end
+
   def update
     @episode = Episode.find(params[:id])
     @episode.update(episode_params)

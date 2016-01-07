@@ -3,6 +3,11 @@ class Api::V1::SeasonsController < ApplicationController
     render json: Season.all
   end
 
+  def show
+  @season = Season.find(params[:id])
+  render json: @season 
+  end
+
   def update
     @season = Season.find(params[:id])
     @season.update(season_params)
