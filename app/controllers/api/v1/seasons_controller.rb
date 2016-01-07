@@ -1,6 +1,6 @@
 class Api::V1::SeasonsController < ApplicationController
   def index
-    render json: Season.all
+    render json: Season.all.order(name: :asc)
   end
 
   def show
