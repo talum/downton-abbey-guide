@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       resources :episodes
       resources :seasons
       resources :actors
+      devise_for :users, controllers: {sessions: 'api/v1/sessions'}
+
     end
   end
 end

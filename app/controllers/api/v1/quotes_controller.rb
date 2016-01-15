@@ -1,4 +1,5 @@
 class Api::V1::QuotesController < ApplicationController
+    before_filter :authenticate_user_from_token!, except: [:index, :show]
   def index
     render json: Quote.all
   end
