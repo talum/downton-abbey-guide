@@ -1,4 +1,4 @@
-class Api::V1::QuotesController < ApplicationController
+class QuotesController < ApplicationController
   def index
     render json: Quote.all
   end

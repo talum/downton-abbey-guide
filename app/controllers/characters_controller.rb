@@ -1,4 +1,4 @@
-class Api::V1::CharactersController < ApplicationController
+class CharactersController < ApplicationController
 
   def index
     render json: Character.all

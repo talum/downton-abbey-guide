@@ -1,4 +1,4 @@
-class Api::V1::SeasonsController < ApplicationController
+class SeasonsController < ApplicationController
   def index
     render json: Season.all.order(name: :asc)
   end

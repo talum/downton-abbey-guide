@@ -1,4 +1,4 @@
-class Api::V1::EpisodesController < ApplicationController
+class EpisodesController < ApplicationController
   def index
     render json: Episode.all
   end
