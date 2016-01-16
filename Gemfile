@@ -26,6 +26,8 @@ gem 'recursive-open-struct'
 gem 'devise_token_auth'
 gem 'omniauth'
 
+gem 'rails_12factor', group: :production
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
