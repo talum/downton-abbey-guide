@@ -25,7 +25,7 @@ module DowntonAbbeyGuide
 
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins 'http://downton-abbey-quips.herokuapp.com/'
+        origins '*'
         resource '*', :headers => :any, :methods => [:get, :post, :options, :put, :patch, :delete]
       end
     end
